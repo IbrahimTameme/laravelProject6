@@ -121,7 +121,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-item">
                         <div class="team-img">
-                            <img src="/img/Roaa.jpg" alt="Team Image">
+                            <img src="/img/Roaa.jpg" alt="Team Image" width="10%">
                         </div>
                         <div class="team-text">
                             <h2>Roa'a Yaseen</h2>
@@ -153,7 +153,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-item">
                         <div class="team-img">
-                            <img src="https://static.vecteezy.com/system/resources/thumbnails/000/211/023/small/CUSTOMER_SERVICE_CHARACTER.jpg" alt="Team Image">
+                            <img src="/img/ebrahem1.jpg" alt="Team Image">
                         </div>
                         <div class="team-text">
                             <h2>Ebrahem Tamimi</h2>
@@ -169,7 +169,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-item">
                         <div class="team-img">
-                            <img src="https://static.vecteezy.com/system/resources/thumbnails/000/211/023/small/CUSTOMER_SERVICE_CHARACTER.jpg" alt="Team Image">
+                            <img src="/img/gufran11.jpg" alt="Team Image">
                         </div>
                         <div class="team-text">
                             <h2>Ghofran Almomani</h2>
