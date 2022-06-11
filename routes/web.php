@@ -26,6 +26,14 @@ Route::get('/ho', function () {
     return view('layouts.landingpage');
 });
 
+Route::get('/Contactus', function () {
+    return view('layouts.Contactus');
+});
+
+Route::get('/About', function () {
+    return view('layouts.Aboutus');
+});
+
 
 Auth::routes();
 
