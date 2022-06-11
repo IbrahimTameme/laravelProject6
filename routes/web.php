@@ -34,7 +34,18 @@ Route::get('/addItem', function () {
 });
 // Route::get('/addItem',  [EldersController::class, 'addpic']);
 
+
+Route::get('/Contactus', function () {
+    return view('layouts.Contactus');
+});
+
+Route::get('/About', function () {
+    return view('layouts.Aboutus');
+});
+
+
 Route::post('/added',  [EldersController::class, 'insert']);
+
 
 Auth::routes();
 
