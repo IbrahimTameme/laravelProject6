@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('title', 'Home')
 @section('contant')
 
 
@@ -11,13 +12,11 @@
                             <img src="{{asset('img/carousel-1.jpg')}}" alt="Image">
                         </div>
                         <div class="carousel-text">
-                            <h1>Let's be kind for children</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac consequat at lectus in malesuada
-                            </p>
+                            <h1>Let's be kind for <br> elderly</h1> <br><br>
+                           
                             <div class="carousel-btn">
-                                <a class="btn btn-custom" href="">Donate Now</a>
-                                <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch Video</a>
+                                <a class="btn btn-custom" href="">Volunteer Now</a>
+                                <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/HLGzMgQrlWs" data-target="#videoModal">Watch Video</a>
                             </div>
                         </div>
                     </div>
@@ -26,28 +25,25 @@
                             <img src="{{asset('img/carousel-2.jpg')}}" alt="Image">
                         </div>
                         <div class="carousel-text">
-                            <h1>Get Involved with helping hand</h1>
-                            <p>
-                                Morbi sagittis turpis id suscipit feugiat. Suspendisse eu augue urna. Morbi sagittis, orci sodales varius fermentum, tortor
-                            </p>
+                            <h1>Get Involved with a helping hand</h1> <br><br>
+                           
                             <div class="carousel-btn">
-                                <a class="btn btn-custom" href="">Donate Now</a>
-                                <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch Video</a>
+                                <a class="btn btn-custom" href="">Volunteer  Now</a>
+                                <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/HLGzMgQrlWs" data-target="#videoModal">Watch Video</a>
                             </div>
                         </div>
+                        
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-img">
                             <img src="img/carousel-3.jpg" alt="Image">
                         </div>
                         <div class="carousel-text">
-                            <h1>Bringing smiles to millions</h1>
-                            <p>
-                                Sed ultrices, est eget feugiat accumsan, dui nibh egestas tortor, ut rhoncus nibh ligula euismod quam. Proin pellentesque odio
-                            </p>
+                            <h1>Bringing smiles to others</h1> <br><br>
+                            
                             <div class="carousel-btn">
-                                <a class="btn btn-custom" href="">Donate Now</a>
-                                <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch Video</a>
+                                <a class="btn btn-custom" href="">Volunteer  Now</a>
+                                <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/HLGzMgQrlWs" data-target="#videoModal">Watch Video</a>
                             </div>
                         </div>
                     </div>
@@ -89,7 +85,7 @@
                         </div>
                         <div class="about-tab">
                             <ul class="nav nav-pills nav-justified">
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link active" data-toggle="pill" href="#tab-content-1">About</a>
                                 </li>
                                 <li class="nav-item">
@@ -97,7 +93,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" data-toggle="pill" href="#tab-content-3">Vision</a>
-                                </li>
+                                </li> -->
                             </ul>
 
                             <div class="tab-content">
@@ -124,72 +120,72 @@
             <div class="container">
                 <div class="section-header text-center">
                     <p>What We Do?</p>
-                    <h2>We believe that we can save more lifes with you</h2>
+                    <h2>We believe that we can make a difference in elderly life with you</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="service-item">
                             <div class="service-icon">
-                                <i class="flaticon-diet"></i>
+                            <i class="fa-solid fa-carrot"></i>
                             </div>
                             <div class="service-text">
                                 <h3>Healthy Food</h3>
-                                <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                                <p>We make sure that the provision of healthy food and  appropriate for the needs of the elderly and their age and that they get their meals on time</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="service-item">
                             <div class="service-icon">
-                                <i class="flaticon-water"></i>
+                            <i class="fa-solid fa-car-rear"></i>
                             </div>
                             <div class="service-text">
-                                <h3>Pure Water</h3>
-                                <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                                <h3>Access Care </h3>
+                                <p>We make sure that the elderly person has access to his daily and life needs (groceries, clothes, etc.) and if he cannot reach them himself, we bring them to him</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="service-item">
                             <div class="service-icon">
-                                <i class="flaticon-healthcare"></i>
+                               <i class="fa-solid fa-hand-holding-medical"></i>
                             </div>
                             <div class="service-text">
                                 <h3>Health Care</h3>
-                                <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                                <p>We make sure that the elderly receives appropriate health care and that his medications are available to him in case he needs them and that he takes them on time and visits his doctor constantly</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="service-item">
                             <div class="service-icon">
-                                <i class="flaticon-education"></i>
+                            <i class="fa-solid fa-pump-soap"></i>
                             </div>
                             <div class="service-text">
-                                <h3>Primary Education</h3>
-                                <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                                <h3>Personal Hygiene Care</h3>
+                                <p>We make sure that the elderly are taken care of in terms of personal hygiene and we help with that</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="service-item">
                             <div class="service-icon">
-                                <i class="flaticon-home"></i>
+                            <i class="fa-solid fa-spray-can-sparkles"></i>
                             </div>
                             <div class="service-text">
-                                <h3>Residence Facilities</h3>
-                                <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                                <h3>Clean Environment</h3>
+                                <p>We ensure the cleanliness of the environment in which the elderly live and carry out their daily activities</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="service-item">
                             <div class="service-icon">
-                                <i class="flaticon-social-care"></i>
+                            <i class="fa-solid fa-heart"></i>
                             </div>
                             <div class="service-text">
                                 <h3>Social Care</h3>
-                                <p>Lorem ipsum dolor sit amet elit. Phase nec preti facils ornare velit non metus tortor</p>
+                                <p>We make sure that seniors connect with the community around them and can communicate with their loved ones and participate in regular social activities</p>
                             </div>
                         </div>
                     </div>
@@ -200,7 +196,7 @@
         
         
         <!-- Facts Start -->
-        <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
+        <div class="facts" data-parallax="scroll" data-image-src="{{asset('img/facts.jpg')}}">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
@@ -245,8 +241,8 @@
         <!-- Facts End -->
         
         
-        <!-- Causes Start -->
-        <div class="causes">
+        Causes Start
+        <!-- <div class="causes">
             <div class="container">
                 <div class="section-header text-center">
                     <p>Popular Causes</p>
@@ -351,12 +347,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Causes End -->
         
         
         <!-- Donate Start -->
-        <div class="donate" data-parallax="scroll" data-image-src="img/donate.jpg">
+        <!-- <div class="donate" data-parallax="scroll" data-image-src="img/donate.jpg">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-7">
@@ -400,7 +396,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Donate End -->
         
         
@@ -457,7 +453,7 @@
 
 
         <!-- Team Start -->
-        <div class="team">
+        <!-- <div class="team">
             <div class="container">
                 <div class="section-header text-center">
                     <p>Meet Our Team</p>
@@ -534,12 +530,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Team End -->
         
         
         <!-- Volunteer Start -->
-        <div class="volunteer" data-parallax="scroll" data-image-src="img/volunteer.jpg">
+        <!-- <div class="volunteer" data-parallax="scroll" data-image-src="img/volunteer.jpg">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-5">
@@ -575,12 +571,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Volunteer End -->
         
         
         <!-- Testimonial Start -->
-        <div class="testimonial">
+        <!-- <div class="testimonial">
             <div class="container">
                 <div class="section-header text-center">
                     <p>Testimonial</p>
@@ -645,6 +641,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Testimonial End -->
         @endsection
