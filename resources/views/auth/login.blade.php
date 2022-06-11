@@ -1,3 +1,37 @@
+<style>
+
+
+.card-header:first-child {
+    color: white;
+    background:#008E89;
+}
+
+button.btn.btn-primary {
+color: #fff;
+border-color:#008E89;
+background: #008E89;
+    
+}
+
+a.btn.btn-link{
+    color: #008E89;
+}
+
+input#remember.form-check-input {
+color: #008E89;
+    border-color:#008E89;
+}
+
+div.card{
+    color: #008E89;
+}
+
+</style>
+
+
+
+
+
 @extends('layouts.app')
 
 @section('content')
@@ -56,12 +90,12 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
                                 </button>
-
+{{-- 
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
-                                @endif
+                                @endif --}}
                             </div>
                         </div>
                     </form>

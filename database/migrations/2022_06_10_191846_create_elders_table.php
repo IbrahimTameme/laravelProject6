@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsersTable extends Migration
+class CreateEldersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,24 +13,24 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->bigIncrements('user_id');
+        Schema::create('elders', function (Blueprint $table) {
+            $table->bigIncrements('elder_id');
             $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->enum('gender', ['Male','Female']);
             $table->integer('age');
-            $table->string('front_id_pic');
-            $table->string('back_id_pic');
+            $table->integer('phone_num');
             $table->enum('needed_services',['Cleaning','Transportation','Provide_needs','Personal_hygiene','Personal_check',]);
-            $table->dateTime('time');
-            $table->boolean('car');
-            $table->string('string');
+            $table->integer('time_needed');
+            $table->enum('gender', ['Male','Female']);
+            $table->string('location');
+            $table->string('guardian_name');
+            $table->integer('guardian_number');
+            $table->integer('guardian_relation');
+            $table->integer('guardian_id_pic');
             $table->boolean('is_accepted');
             $table->boolean('is_deleted');
 
-            $table->rememberToken();
+
+
             $table->timestamps();
         });
     }
@@ -42,6 +42,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('elders');
     }
 }
