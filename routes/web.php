@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EldersController;
-
+use App\Http\Controllers\TestController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,11 +17,8 @@ use App\Http\Controllers\EldersController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/nav', function () {
-    return view('layouts.nav');
-});
-Route::get('/master', function () {
-    return view('layouts.master');
+Route::get('/signup', function () {
+    return view('sign');
 });
 Route::get('/ho', function () {
     return view('layouts.landingpage');
@@ -32,7 +29,7 @@ Route::get('/user', function () {
 Route::get('/addItem', function () {
     return view('addpic');
 });
-// Route::get('/addItem',  [EldersController::class, 'addpic']);
+Route::post('/sign',[TestController::class, 'insert_user']);
 
 
 Route::get('/Contactus', function () {

@@ -52,7 +52,7 @@ div.card{
                                 @enderror
                             </div>
                         </div>
-                         <div class="row mb-3">
+                         <!-- <div class="row mb-3">
                             <label for="last name" class="col-md-4 col-form-label text-md-end">{{ __('Last Name') }}</label>
                           
                             <div class="col-md-6">
@@ -64,9 +64,9 @@ div.card{
                                     </span>
                                 @enderror
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="row mb-3">
+                        <!-- <div class="row mb-3">
                             <label for="floatingSelect" class="col-md-4 col-form-label text-md-end">{{ __('Gender') }}</label>
                           
                             <div class="col-md-6">
@@ -79,9 +79,9 @@ div.card{
                                   <div class="invalid-feedback">{{$message}}</div>
                                 @enderror
                             </div>
-                        </div>
+                        </div> -->
              
-                        <div class="row mb-3">
+                        <!-- <div class="row mb-3">
                             <label for="age" class="col-md-4 col-form-label text-md-end">{{ __('Age') }}</label>
                           
                             <div class="col-md-6">
@@ -93,9 +93,9 @@ div.card{
                                     </span>
                                 @enderror
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="row mb-3">
+                        <!-- <div class="row mb-3">
 
                             <label for="front_id_pic" class="col-md-4 col-form-label text-md-end">{{ __('Front_id_pic') }}</label>
                             <div class="col-md-6">
@@ -108,9 +108,9 @@ div.card{
                             @endif
                         
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="row mb-3">
+                    <!-- <div class="row mb-3">
 
                         <label for="back_id_pic" class="col-md-4 col-form-label text-md-end">{{ __('Back_id_pic') }}</label>
                         <div class="col-md-6">
@@ -123,20 +123,20 @@ div.card{
                         @endif
                     
                     </div>
-                    </div>
+                    </div> -->
 
-
+<!-- 
                     <div class="row mb-3">
                         <label for="time" class="col-md-4 col-form-label text-md-end">{{ __('Time') }}</label>
                     <div class="col-md-6">
                     <input type="time" id="time" name="time"
                            min="09:00" max="18:00" required>
                     </div>
-                    </div>
+                    </div> -->
 
                    
                      
-                    <div class="row mb-3">
+                    <!-- <div class="row mb-3">
                         <label for="floatingSelect" class="col-md-4 col-form-label text-md-end">{{ __('Car') }}</label>
                       
                         <div class="col-md-6">
@@ -149,7 +149,7 @@ div.card{
                               <div class="invalid-feedback">{{$message}}</div>
                             @enderror
                         </div>
-                    </div>
+                    </div> -->
                     
 
 
