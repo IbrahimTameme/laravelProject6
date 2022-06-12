@@ -16,20 +16,24 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('user_id');
             $table->string('name');
+            $table->string('lname');
+            $table->timestamp('img')->nullable();
+            $table->string('phone')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->enum('gender', ['Male','Female']);
-            $table->integer('age');
+            $table->date('age');
             $table->string('front_id_pic');
             $table->string('back_id_pic');
             $table->enum('needed_services',['Cleaning','Transportation','Provide_needs','Personal_hygiene','Personal_check',]);
             $table->dateTime('time');
+            $table->dateTime('timeTo');
             $table->string('car');
             $table->boolean('is_accepted')->default('0');
             $table->boolean('is_deleted')->default('0');
             $table->rememberToken();
-            $table->timestamps();;
+            $table->timestamps();
         });
     }
 

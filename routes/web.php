@@ -23,13 +23,19 @@ Route::get('/signup', function () {
 Route::get('/ho', function () {
     return view('layouts.landingpage');
 });
-Route::get('/user', function () {
+Route::get('/user/id/{id}', function () {
     return view('user');
 });
+
 Route::get('/addItem', function () {
     return view('addpic');
 });
+Route::get('/login', function () {
+    return view('login');
+});
 Route::post('/sign',[TestController::class, 'insert_user']);
+// Route::post('form', [TestController::Class, 'form_validate'])-> middleware('CheckUser')  ;
+Route::post('/form',[TestController::class, 'form_validate']);
 
 
 Route::get('/Contactus', function () {

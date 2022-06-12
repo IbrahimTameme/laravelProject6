@@ -7,6 +7,13 @@ use App\Models\User;
 
 class TestController extends Controller
 {
+
+public function viewsign(){
+  return view('sign');
+}
+
+
+
   public function editPic($id){
     $data = User::find($id);
     $file= $request->file('img');
@@ -21,8 +28,22 @@ class TestController extends Controller
   }
 
   public function insert_user(Request $request){
+    
+    $request->validate([
+      'name'=>'required|alpha',
+      'lname'=>'required|alpha',
+      'email'=>'required|email',
+      'password'=>'required|min:8',
+      'phone'=>'numeric|digits_between:9,11',
+      'age'=>'required', 'before:13 years ago',
+      'password_confirmation' => 'required_with:password|same:password|min:8',
+     
+
+  ]);
     $create=new User();
     $create->name=$request->input('name');
+    $create->lname=$request->input('lname');
+    $create->phone=$request->input('phone');
     $create->email=$request->input('email');
     $create->password=$request->input('password');
     $create->gender=$request->input('gender');
@@ -31,8 +52,34 @@ class TestController extends Controller
     $create->back_id_pic=$request->input('back_id_pic');
     $create->needed_services=$request->input('needed_services');
     $create->time=$request->input('time');
+    $create->timeTo=$request->input('timeTo');
     $create->car=$request->input('car');
     $create->save();
-    return redirect('signup')->with('message','The data has been added successfully');
+
+   
+
+    return view('login')->with('messageRej','The data has been registration successfully');
+
+    // return redirect('signup')->with('message','The data has been added successfully');
  }
+
+ public function form_validate(Request $request){
+  $request->validate([
+      'name'=>'required|alpha',
+      'lname'=>'required|alpha',
+      'email'=>'required|email',
+      'password'=>'required|min:8',
+      'phone'=>'numeric|digits_between:9,11',
+      'age'=>'required', 'before:13 years ago',
+      'password_confirmation' => 'required_with:password|same:password|min:8',
+     
+
+  ]);
+
+  return 
+  redirect()->action('App\Http\Controllers\TestController@insert_user');
+  // redirect()->action('TestController::class, insert_user');
+
+
+}
 }
