@@ -43,7 +43,9 @@ public function updateuser(Request $request)
   $lname=$request->input('lname');
   $phone=$request->input('phone');
   $email=$request->input('email');
-  DB::update('update users set name = ? ,lname = ? , phone=?, email=? where id = ?', [$name,$lname,$phone,$email,$id]);
+  $age=$request->input('age');
+  $gender=$request->input('gender');
+  DB::update('update users set name = ? ,lname = ? , phone=?, email=?, age=?, gender=? where id = ?', [$name,$lname,$phone,$email,$age,$gender,$id]);
   return redirect('/home')->with('message','The data has been updated successfully');
 
 }

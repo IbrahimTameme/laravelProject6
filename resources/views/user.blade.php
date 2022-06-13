@@ -59,6 +59,14 @@
                     <span class="text-secondary">{{  Auth::user()->phone}}</span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                  <h6 class="mb-0">Age</h6>
+                    <span class="text-secondary">{{  Auth::user()->age}}</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                  <h6 class="mb-0">Gender</h6>
+                    <span class="text-secondary">{{  Auth::user()->gender}}</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                   <div class="row">
                     <div class="col-sm-12">
                       <button class="btn btn-info" onclick="show1()" >Edit</button>
@@ -86,6 +94,18 @@
                   <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                   <h6 class="mb-0">Phone</h6>
                   <input type="text" name="phone" value="{{  Auth::user()->phone}}">
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                  <h6 class="mb-0">Age</h6>
+                  <input type="date" name="age" value="{{  Auth::user()->age}}">
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                  <h6 class="mb-0">Gender</h6>
+                  <select  name="gender" id="floatingSelect" aria-label="Floating label select example" required>
+                                    <option selected value="" >Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                  </select>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                   <div class="row">
