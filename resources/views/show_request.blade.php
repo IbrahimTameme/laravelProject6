@@ -68,7 +68,8 @@ img {
             <div class="mt-3"style="text-align:center">Time_Needed :{{$data->    time_needed}}</div>
 
         </div>
-        <p><button>Contact</button></p>
+        <a href="accept_request/id/{{Auth::user()->id}}/{{$data->elder_id}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Accept</a>
+        </div>
 </div>
 
 

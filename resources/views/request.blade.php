@@ -18,14 +18,24 @@ div.card{
     color: #008E89;
 }
     </style>
-    <html>
-<body>
+  <!-- Page Header Start -->
+  <div class="page-header"style="background-color: #008E89; padding: 90px 0 40px 0;"  >
+        <div class="container" >
+            <div class="row">
+                <div class="col-12">
+                    <h2>Apply for our servece</h2>
+                </div>
+                <div class="col-12">
+                    <a>Apply for our servece</a>
+                </div>
+            </div>
+    </div>
+    </div>
+    <!-- Page Header End -->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="row d-flex justify-content-around mt-5">
-            <a href="{{url('add')}}" class="card-link btn btn-danger w-25 ">add</a>
-            </div>
+           
             <div class="card">
                 <div class="card-header"></div>
                 <div class="card-body">

@@ -28,15 +28,20 @@ div.card{
 
 @extends('layouts.master')
 @section('contant')
-<div class="page-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2>Contact Us</h2>
+   <!-- Page Header Start -->
+   <div class="page-header"style="background-color: #008E89; padding: 90px 0 40px 0;"  >
+        <div class="container" >
+            <div class="row">
+                <div class="col-12">
+                    <h2>Register</h2>
+                </div>
+                <div class="col-12">
+                    <a>Register</a>
+                </div>
             </div>
-        </div>
     </div>
-</div>
+    </div>
+    <!-- Page Header End -->
 
 <div class="container">
     <div class="row justify-content-center">

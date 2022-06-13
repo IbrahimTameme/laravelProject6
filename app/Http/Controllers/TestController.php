@@ -6,8 +6,14 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\requests;
 use App\Models\elders;
-use Illuminate\Support\Facades\Auth;
+
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
+
+
+
+
+
 
 
 class TestController extends Controller
@@ -17,6 +23,8 @@ class TestController extends Controller
   public function user()
 {  $id = auth()->user()->id;
     // $data = ['LoggedUserInfo'=>User::select('id','name','last_name')->where('id' , '=' ,  $id)->first()];
+
+    $data = elders::where('volunteer_id',$id);
  
 
     return view('user/id/'.$id);
@@ -25,6 +33,8 @@ class TestController extends Controller
 public function viewsign(){
   return view('sign');
 }
+
+
 
 
 
@@ -88,7 +98,9 @@ public function updateuser(Request $request)
   public function show_request()
 {
 
-$view2 = requests::all();
+$view2 = DB::table('elders')
+->where('job_taken',0)->where('is_accepted',1)
+->get();
 return view('show_request',compact('view2'));
 
 }
@@ -101,6 +113,47 @@ return view('request');
 }
 
 
+public function accept_request($user_id , $elder_id)
+{
+
+  DB::update('update elders set volunteer_id = ? , job_taken=? where elder_id = ?', [$user_id,1,$elder_id]);
+      return redirect('show_request')->with('message','The data has been updated successfully');
+  
+
+  // $data = elders::where('elder_id',$elder_id);
+  // dd($data);
+  // $data->volunteer_id = $user_id;
+  // $data->job_taken = 1;
+  // return redirect('show_request');
+
+// return view('accept_request');
+
+}
+
+
+public function delete_job($user_id)
+{
+
+  DB::update('update elders set  volunteer_id = ?,job_taken=? where volunteer_id = ?', [0,0,$user_id]);
+      return redirect('home')->with('message','The data has been updated successfully');
+  
+
+  // $data = elders::where('elder_id',$elder_id);
+  // dd($data);
+  // $data->volunteer_id = $user_id;
+  // $data->job_taken = 1;
+  // return redirect('show_request');
+
+// return view('accept_request');
+
+}
+
+
+
+
+
+
+}
 
 //   public function insert_user(Request $request){
     
@@ -158,5 +211,4 @@ return view('request');
 
 // }
 
-}
 
