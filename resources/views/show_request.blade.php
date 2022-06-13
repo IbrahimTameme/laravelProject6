@@ -1,64 +1,80 @@
 @extends('layouts.master')
 @section('title', 'Reqeust order')
 @section('contant')
+
+
+
 <style>
-.card-header:first-child {
-        color: white;
-        background:#008E89;
-    
-}
-button.btn.btn-primary {
-color: #fff;
-border-color:#008E89;
-background: #008E89;
-    
+
+
+button:hover, a:hover {
+  opacity: 0.7;
 }
 
-div.card{
-    color: #008E89;
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #008E89;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
-.card
-{
-    margin-top:2%;
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    margin: 20px
+
 }
-.topmargin
-{
-    height: 250px;
-    width: 100%;
-    background-color:#008E89;
-}
+
     </style>
-    <html>
-<body>
-    <div class="topmargin">
-    </div>
-<div class="container">
-    <div class="row justify-content-center">
-    
-        
-        <div class="row d-flex justify-content-around"> 
-            
-       @foreach($view2 as $data) 
-    <div class="card" style="width: 25rem;">
-        
-        <img src="https://www.politico.com/dims4/default/cdf13cc/2147483647/strip/true/crop/1160x773+0+0/resize/630x420!/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F6e%2Fc0%2F4768455b43789942828ea3620e29%2F210818-larry-elder-ap-773.jpg" title="YouTube video player" >
-        <div class="container"> 
 
-        <div class="card-body">
-          <h5 class="card-title">{{$data->elder_name}}</h5>
-          <p class="card-text">{{$data->elder_age}}</p>
-          <p class="card-text">{{$data->gender}}</p>
-          <p class="card-text">{{$data->location}}</p>
-          <p class="card-text">{{$data->elder_phone_number}}</p>
-          <p class="card-text">{{$data->needed_services}}</p>
-          <p class="card-text">{{$data->date}}</p>
+<div class="page-header"style="background-color: #008E89; padding: 90px 0 40px 0;"  >
+    <div class="container" >
+        <div class="row">
+            <div class="col-12">
+                <h2>About Us</h2>
+            </div>
+            <div class="col-12">
+                <a href="">Volunteer Page</a>
+            </div>
         </div>
-       
-       
-      </div>
+</div>
+</div>
 
-    </div>
+
+
+<div class="container p-5">
+    <div class="d-flex flex-row justify-content-around flex-wrap">
+  @foreach($view2 as $data) 
+  <div class="card mt-5">
+        
+
+        <div class="mt-5">
+            <div>
+                <div style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><img src="https://www.manufacturingusa.com/sites/manufacturingusa.com/files/default.png" width="300px"></div>
+            </div>
+            
+            <div class="mt-3"style="text-align:center"> Name :{{$data->name}}</div>
+            <div class="mt-3"style="text-align:center"> Age :{{$data->age}}</div>
+            <div class="mt-3"style="text-align:center">Gender :{{$data->gender}}</div>
+            <div class="mt-3"style="text-align:center">Location :{{$data->location}}</div>
+            <div class="mt-3"style="text-align:center">Phone :{{$data->phone_num}}</div>
+            <div class="mt-3"style="text-align:center">Needed_Services :{{$data->needed_services}}</div>
+            <div class="mt-3"style="text-align:center">Time_Needed :{{$data->    time_needed}}</div>
+
+        </div>
+        <p><button>Contact</button></p>
+</div>
+
+
 @endforeach
-</body>
-</html>
+
+</div>
+</div>
+</div>
 @endsection
