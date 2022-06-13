@@ -20,7 +20,7 @@
       <div class="container" style="width: 40%;">
       <div class="form-outline mb-4">
         <input type="email" id="loginName" class="form-control" />
-        <label class="form-label" for="loginName">Email or username</label>
+        <label class="form-label" for="loginName">Email or username {{  Auth::user()->user_id}}</label>
       </div>
 
       <!-- Password input -->
