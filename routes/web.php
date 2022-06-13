@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EldersController;
 use App\Http\Controllers\TestController;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,7 +48,9 @@ Route::post('user/id/{id}',  [TestController::class, 'user']);
 Route::get('request',  [TestController::class, 'request']);
 
 
-Route::post('/added',  [EldersController::class, 'insert']);
+Route::post('/added',  [TestController::class, 'editPic']);
+Route::post('/updateuser',  [TestController::class, 'updateuser']);
+
 
 
 Route::post('/request',[TestController::class, 'insert_request']);

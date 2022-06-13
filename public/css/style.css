@@ -2259,9 +2259,16 @@ a:focus {
 .shadow-none {
     box-shadow: none!important;
 }
-.editPic{
+#editPic{
     display: none;
 }
 .cont{
     width: 60%;
+}
+.butt{
+    background-color: rgb(245, 245, 220,0);
+    border: none;
+}
+#use{
+    display: none;
 }
