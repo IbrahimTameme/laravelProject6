@@ -1,0 +1,55 @@
+
+
+               
+
+
+
+
+                    <div class="row mb-3">
+                        <label for="time" class="col-md-4 col-form-label text-md-end">{{ __('Time From') }}</label>
+                    <div class="col-md-6">
+                    <input type="datetime-local" id="time" name="time" value="{{ old('time') }}" required>
+                    </div>
+                    </div> 
+
+                    <div class="row mb-3">
+                        <label for="timeTo" class="col-md-4 col-form-label text-md-end">{{ __('Time To') }}</label>
+                    <div class="col-md-6">
+                    <input type="datetime-local" id="timeTo" name="timeTo" value="{{ old('timeTo) }}" required>
+                    </div>
+                    </div> 
+
+                   
+                     
+                    <div class="row mb-3">
+                        <label for="car" class="col-md-4 col-form-label text-md-end">{{ __('Car') }}</label>
+                      
+                        <div class="col-md-6">
+                            <select class="form-select form-control  @error('car') is-invalid @enderror" name="car" id="car" aria-label="Floating label select example" value="{{ old('car') }}">
+                                <option selected value="" >Car</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                              </select>
+                              @error('car')
+                              <div class="invalid-feedback">{{$message}}</div>
+                            @enderror
+                        </div>
+                    </div>
+                    
+
+//////////////////////////////////////////////////////////////////////////////
+
+          
+            
+            
+           
+
+
+        //////////////////////////////////////////////
+
+
+        
+       
+       
+
+        ///////////////////////////////////

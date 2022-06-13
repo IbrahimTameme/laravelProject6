@@ -2259,3 +2259,9 @@ a:focus {
 .shadow-none {
     box-shadow: none!important;
 }
+.editPic{
+    display: none;
+}
+.cont{
+    width: 60%;
+}
