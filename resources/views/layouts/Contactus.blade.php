@@ -2,14 +2,17 @@
 @section('contant')
 
 <!-- Page Header Start -->
-<div class="page-header">
-    <div class="container">
+<div class="page-header"style="background-color: #008E89; padding: 90px 0 40px 0;"  >
+    <div class="container" >
         <div class="row">
             <div class="col-12">
-                <h2>Contact Us</h2>
+                <h2>Contactus</h2>
+            </div>
+            <div class="col-12">
+                <a>Contactus</a>
             </div>
         </div>
-    </div>
+</div>
 </div>
 <!-- Page Header End -->
 
@@ -25,21 +28,22 @@
         </div>
         <div class="contact-form">
                 <div id="success"></div>
-                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                <form action="/contacts" method="post"  name="sentMessage" id="contactForm" novalidate="novalidate">
+                    @csrf
                     <div class="control-group">
-                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
-                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                        <input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
-                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
-                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                        <textarea name="message" class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
                         <p class="help-block text-danger"></p>
                     </div>
                     <div>

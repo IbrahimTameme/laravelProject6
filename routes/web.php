@@ -2,7 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EldersController;
+
+use App\Http\Controllers\contact;
+
 use App\Http\Controllers\TestController;
+
+
+
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,8 +54,20 @@ Route::get('/About', function () {
 Route::post('user/id/{id}',  [TestController::class, 'user']);
 Route::get('request',  [TestController::class, 'request']);
 
+Route::get('/Events', function () {
+    return view('layouts.Events');
+});
 
-Route::post('/added',  [EldersController::class, 'insert']);
+
+
+Route::get('contact', [contact::Class,'Viewadd']);
+Route::post('contacts', [contact::class, 'contacts']);
+
+
+
+Route::post('/added',  [TestController::class, 'editPic']);
+Route::post('/updateuser',  [TestController::class, 'updateuser']);
+
 
 
 Route::post('/request',[TestController::class, 'insert_request']);
@@ -65,5 +85,12 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+
 Route::post('/added',  [TestController::class, 'editPic']);
 Route::post('/updateuser',  [TestController::class, 'updateuser']);
+
+
+
+
+
+
