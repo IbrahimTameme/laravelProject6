@@ -198,7 +198,7 @@
             <div class="owl-carousel testimonials-carousel">
                 <div class="testimonial-item">
                     <div class="testimonial-profile">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/211/023/small/CUSTOMER_SERVICE_CHARACTER.jpg" alt="Image">
+                        <img src="https://www.freeiconspng.com/uploads/profile-icon-28.png" alt="Image">
                         <div class="testimonial-name">
                             <h3>Person Name</h3>
                             <p>Profession</p>
@@ -212,7 +212,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="testimonial-profile">
-                        <img src="img/testimonial-2.jpg" alt="Image">
+                        <img src="https://www.freeiconspng.com/uploads/profile-icon-28.png" alt="Image">
                         <div class="testimonial-name">
                             <h3>Person Name</h3>
                             <p>Profession</p>
@@ -226,7 +226,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="testimonial-profile">
-                        <img src="img/testimonial-3.jpg" alt="Image">
+                        <img src="https://www.freeiconspng.com/uploads/profile-icon-28.png" alt="Image">
                         <div class="testimonial-name">
                             <h3>Person Name</h3>
                             <p>Profession</p>
@@ -240,7 +240,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="testimonial-profile">
-                        <img src="img/testimonial-4.jpg" alt="Image">
+                        <img src="https://www.freeiconspng.com/uploads/profile-icon-28.png" alt="Image">
                         <div class="testimonial-name">
                             <h3>Person Name</h3>
                             <p>Profession</p>
