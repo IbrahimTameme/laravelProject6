@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EldersController;
-
+use App\Http\Controllers\contact;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -43,6 +43,16 @@ Route::get('/About', function () {
     return view('layouts.Aboutus');
 });
 
+Route::get('/Events', function () {
+    return view('layouts.Events');
+});
+
+
+
+Route::get('contact', [contact::Class,'Viewadd']);
+Route::post('contacts', [contact::class, 'contacts']);
+
+
 
 Route::post('/added',  [EldersController::class, 'insert']);
 
@@ -50,3 +60,8 @@ Route::post('/added',  [EldersController::class, 'insert']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+
+

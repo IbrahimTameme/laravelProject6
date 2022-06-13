@@ -76,7 +76,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="about-img" data-parallax="scroll" data-image-src="img/about.jpg"></div>
+                        <div class="about-img" data-parallax="scroll" data-image-src="https://images.theconversation.com/files/335139/original/file-20200514-77276-m1zo9d.jpg?ixlib=rb-1.1.0&rect=238%2C810%2C4326%2C2977&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip"></div>
                     </div>
                     <div class="col-lg-6">
                         <div class="section-header">
@@ -241,7 +241,7 @@
         <!-- Facts End -->
         
         
-        Causes Start
+        {{-- Causes Start --}}
         <!-- <div class="causes">
             <div class="container">
                 <div class="section-header text-center">
@@ -410,7 +410,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="event-item">
-                            <img src="img/event-1.jpg" alt="Image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHcK8aft5MrMLRNBfk0oHw3ZRwB1pR7lQ4Vg&usqp=CAU" alt="Image">
                             <div class="event-content">
                                 <div class="event-meta">
                                     <p><i class="fa fa-calendar-alt"></i>01-Jan-45</p>
@@ -429,7 +429,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="event-item">
-                            <img src="img/event-2.jpg" alt="Image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL0NUZwwh84y0vpZE3hxh9rKdqAAivjK_nQw&usqp=CAU" alt="Image">
                             <div class="event-content">
                                 <div class="event-meta">
                                     <p><i class="fa fa-calendar-alt"></i>01-Jan-45</p>

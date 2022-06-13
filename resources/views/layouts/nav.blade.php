@@ -34,11 +34,11 @@
             <div class="container-fluid">
                 <img src="{{asset('img/logo2.png')}}" height="70px" width="60px" alt="logo" style="margin:10px">
                 <a href="/ho" class="navbar-brand">AUNS</a>
-                <a href="event.html" class="nav-item nav-link">Home</a>
-                        <a href="event.html" class="nav-item nav-link">Events</a>
-                        <a href="event.html" class="nav-item nav-link">About</a>
+                <a href="/ho">Home</a>
+                <a href="/Events">Events</a>
+                <a href="/About">Aboutus</a>
                         <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="/Contactus">Contactus</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                   
