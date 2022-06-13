@@ -74,10 +74,21 @@ Route::post('/request',[TestController::class, 'insert_request']);
 
 Route::get('/show_request',[TestController::class, 'show_request']);
 
+Route::get('/delete_job/id/{user_id}',[TestController::class, 'delete_job']);
+
+
+
+
+Route::get('accept_request/id/{user_id}/{elder_id}',[TestController::class, 'accept_request']);
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::post('/added',  [TestController::class, 'editPic']);
+Route::post('/updateuser',  [TestController::class, 'updateuser']);
+
 
 
 
