@@ -26,7 +26,7 @@
                     <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
                     <a href="/addItem"> edit</a>
                     <div class="mt-3">
-                      <h4>John Doe</h4>
+                      <h4>{{  Auth::user()->name}}</h4>
                       <div class="row d-flx">
                       <form action="/added" method="post" enctype="multipart/form-data" class="editPic">
                             @csrf
@@ -41,24 +41,20 @@
                   </div>
                 </div>
               </div>
-              <h1>{{ $data }}</h1>
+            
               <div class="card mt-3">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                     <h6 class="mb-0">Full Name</h6>
-                    <span class="text-secondary">Kenneth Valdez</span>
+                    <span class="text-secondary">{{  Auth::user()->name}}</span><span class="text-secondary">{{  Auth::user()->lname}}</span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                   <h6 class="mb-0">Email</h6>
-                    <span class="text-secondary">fip@jukmuh.al</span>
+                    <span class="text-secondary">{{  Auth::user()->email}}</span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                   <h6 class="mb-0">Phone</h6>
-                    <span class="text-secondary">(239) 816-9029</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                  <h6 class="mb-0">Address</h6>
-                    <span class="text-secondary">Bay Area, San Francisco, CA</span>
+                    <span class="text-secondary">{{  Auth::user()->phone}}</span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                   <div class="row">

@@ -23,14 +23,12 @@ Route::get('/signup', function () {
 Route::get('/ho', function () {
     return view('layouts.landingpage');
 });
-Route::get('/user/id/{id}', function () {
-    return view('user');
-});
+
 
 Route::get('/addItem', function () {
     return view('addpic');
 });
-Route::get('/login', function () {
+Route::get('/log', function () {
     return view('login');
 });
 Route::post('/sign',[TestController::class, 'insert_user']);
@@ -45,9 +43,16 @@ Route::get('/Contactus', function () {
 Route::get('/About', function () {
     return view('layouts.Aboutus');
 });
+Route::post('user/id/{id}',  [TestController::class, 'user']);
+Route::get('request',  [TestController::class, 'request']);
 
 
 Route::post('/added',  [EldersController::class, 'insert']);
+
+
+Route::post('/request',[TestController::class, 'insert_request']);
+
+Route::get('/show_request',[TestController::class, 'show_request']);
 
 
 Auth::routes();
