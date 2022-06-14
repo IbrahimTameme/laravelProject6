@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\requests;
+use App\Models\elders;
 
 class TestController extends Controller
 {
@@ -60,7 +61,7 @@ public function viewsign(){
   public function show_request()
 {
 
-$view2 = requests::all();
+$view2 = elders::all();
 return view('show_request',compact('view2'));
 
 }
