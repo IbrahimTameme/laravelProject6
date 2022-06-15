@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Models\elders;
+use Illuminate\Support\Facades\DB;
+
 
 class HomeController extends Controller
 {
@@ -23,6 +27,29 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+        
+        
+        $id = auth()->user()->id;
+// $data = elders::where('volunteer_id',$id);
+
+$data = elders::where('volunteer_id', '=', $id)->first();
+
+// $data = DB::table('elders')
+// ->where('volunteer_id',$id)
+// ->get();
+if($data)
+{
+    return view('user',compact('data'));
+}else
+{
+    return view('user');
+}
+        
     }
+
+
+    // public function user(){
+    //     return view('user');
+    // }
 }

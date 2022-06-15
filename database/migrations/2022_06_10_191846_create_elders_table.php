@@ -19,15 +19,18 @@ class CreateEldersTable extends Migration
             $table->integer('age');
             $table->integer('phone_num');
             $table->enum('needed_services',['Cleaning','Transportation','Provide_needs','Personal_hygiene','Personal_check',]);
-            $table->integer('time_needed');
+            $table->dateTime('time_needed');
             $table->enum('gender', ['Male','Female']);
             $table->string('location');
             $table->string('guardian_name');
             $table->integer('guardian_number');
-            $table->integer('guardian_relation');
-            $table->integer('guardian_id_pic');
-            $table->boolean('is_accepted');
-            $table->boolean('is_deleted');
+            $table->string('guardian_relation');
+            $table->string('guardian_id_pic');
+            $table->boolean('is_accepted')->default('0');
+            $table->boolean('is_deleted')->default('0');
+            $table->boolean('job_taken')->default('0');
+            $table->integer('volunteer_id');
+
 
 
 

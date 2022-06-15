@@ -15,10 +15,10 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-link">
                             <h2>Popular Links</h2>
-                            <a href="">Home</a>
-                            <a href="">About Us</a>
-                            <a href="">Contact Us</a>
-                            <a href="">Upcoming Events</a>
+                            <a href="/">Home</a>
+                            <a href="/About">Aboutus</a>
+                            <a href="/Contactus">Contactus</a>
+                            <a href="/login">Login</a>
                             
                         </div>
                     </div>
@@ -26,15 +26,15 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-contact">
                             <h2>Our Head Office</h2>
-                            <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                            <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                            <p><i class="fa fa-map-marker-alt"></i>123 Street, Aqaba, Jordan</p>
+                            <p><i class="fa fa-phone-alt"></i>+962777777777</p>
                             <p><i class="fa fa-envelope"></i>info@example.com</p>
                             <div class="footer-social">
-                                <a class="btn btn-custom" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-custom" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-custom" href=""><i class="fab fa-youtube"></i></a>
-                                <a class="btn btn-custom" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-custom" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-custom" href="https://twitter.com/ncoaging?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-custom" href="https://web.facebook.com/FriendsElderly/?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-custom" href="https://youtu.be/-W4GYLNeGlE"><i class="fab fa-youtube" target="_blank"></i></a>
+                                <a class="btn btn-custom" href="https://www.instagram.com/explore/tags/elderlycare/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-custom" href="https://www.linkedin.com/company/selfhelpelderly" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                             
                         </div>

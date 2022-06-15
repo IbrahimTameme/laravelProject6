@@ -3,6 +3,14 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EldersController;
 
+use App\Http\Controllers\contact;
+
+use App\Http\Controllers\TestController;
+
+
+
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,22 +25,23 @@ use App\Http\Controllers\EldersController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/nav', function () {
-    return view('layouts.nav');
-});
-Route::get('/master', function () {
-    return view('layouts.master');
+Route::get('/signup', function () {
+    return view('sign');
 });
 Route::get('/ho', function () {
     return view('layouts.landingpage');
 });
-Route::get('/user', function () {
-    return view('user');
-});
+
+
 Route::get('/addItem', function () {
     return view('addpic');
 });
-// Route::get('/addItem',  [EldersController::class, 'addpic']);
+Route::get('/log', function () {
+    return view('login');
+});
+Route::post('/sign',[TestController::class, 'insert_user']);
+// Route::post('form', [TestController::Class, 'form_validate'])-> middleware('CheckUser')  ;
+Route::post('/form',[TestController::class, 'form_validate']);
 
 
 Route::get('/Contactus', function () {
@@ -42,11 +51,46 @@ Route::get('/Contactus', function () {
 Route::get('/About', function () {
     return view('layouts.Aboutus');
 });
+Route::post('user/id/{id}',  [TestController::class, 'user']);
+Route::get('request',  [TestController::class, 'request']);
+
+Route::get('/Events', function () {
+    return view('layouts.Events');
+});
 
 
-Route::post('/added',  [EldersController::class, 'insert']);
 
+Route::get('contact', [contact::Class,'Viewadd']);
+Route::post('contacts', [contact::class, 'contacts']);
+
+
+
+Route::post('/added',  [TestController::class, 'editPic']);
+Route::post('/updateuser',  [TestController::class, 'updateuser']);
+
+
+
+Route::post('/request',[TestController::class, 'insert_request']);
+
+Route::get('/show_request',[TestController::class, 'show_request']);
+
+Route::get('/delete_job/id/{user_id}',[TestController::class, 'delete_job']);
+
+
+
+
+Route::get('accept_request/id/{user_id}/{elder_id}',[TestController::class, 'accept_request']);
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::post('/added',  [TestController::class, 'editPic']);
+Route::post('/updateuser',  [TestController::class, 'updateuser']);
+
+
+
+
+
+
