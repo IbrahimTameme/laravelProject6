@@ -73,13 +73,6 @@ public function accept_request($user_id , $elder_id)
       return redirect('show_request')->with('message','The data has been updated successfully');
   
 
-  // $data = elders::where('elder_id',$elder_id);
-  // dd($data);
-  // $data->volunteer_id = $user_id;
-  // $data->job_taken = 1;
-  // return redirect('show_request');
-
-// return view('accept_request');
 
 }
 
