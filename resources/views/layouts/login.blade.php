@@ -1,56 +1,41 @@
 <style>
 
 
-.card-header:first-child {
-    color: white;
-    background:#008E89;
-}
-
-button.btn.btn-primary {
-color: #fff;
-border-color:#008E89;
-background: #008E89;
+    .card-header:first-child {
+        color: white;
+        background:#008E89;
+    }
     
-}
-
-a.btn.btn-link{
-    color: #008E89;
-}
-
-input#remember.form-check-input {
-color: #008E89;
+    button.btn.btn-primary {
+    color: #fff;
     border-color:#008E89;
-}
-
-div.card{
+    background: #008E89;
+        
+    }
+    
+    a.btn.btn-link{
+        color: #008E89;
+    }
+    
+    input#remember.form-check-input {
     color: #008E89;
-}
+        border-color:#008E89;
+    }
+    
+    div.card{
+        color: #008E89;
+    }
+    
+    </style>
 
-</style>
 
 
 
 
 
-@extends('layouts.master')
+@extends('layouts.app')
 
 @section('content')
-
- <!-- Page Header Start -->
- <div class="page-header"style="background-color: #008E89; padding: 90px 0 40px 0;"  >
-        <div class="container" >
-            <div class="row">
-                <div class="col-12">
-                    <h2>Register</h2>
-                </div>
-                <div class="col-12">
-                    <a>Register</a>
-                </div>
-            </div>
-    </div>
-    </div>
-    <!-- Page Header End -->
-
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -103,7 +88,7 @@ div.card{
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                               <a href=""></a> <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
                                 </button>
 {{-- 

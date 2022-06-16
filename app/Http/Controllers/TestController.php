@@ -6,8 +6,13 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\requests;
 use App\Models\elders;
+
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+
+
+
+
 
 
 
@@ -28,6 +33,48 @@ class TestController extends Controller
 public function viewsign(){
   return view('sign');
 }
+
+
+
+
+
+
+// public function editUser(){
+//   $id = Auth::user()->id;
+//   $update = DB::select('select * from user where id = ?', [$id]);
+//   return view('layout.updateElder',compact('update'));
+// }
+
+public function updateuser(Request $request)
+{
+  $id = Auth::user()->id;
+  
+  $name=$request->input('name');
+  $lname=$request->input('lname');
+  $phone=$request->input('phone');
+  $email=$request->input('email');
+  $age=$request->input('age');
+  $gender=$request->input('gender');
+  DB::update('update users set name = ? ,lname = ? , phone=?, email=?, age=?, gender=? where id = ?', [$name,$lname,$phone,$email,$age,$gender,$id]);
+  return redirect('/home')->with('message','The data has been updated successfully');
+
+}
+
+
+  public function editPic(Request $request){
+   $id = Auth::user()->id;
+    $data = User::find($id);
+    $file= $request->file('img');
+    $filename=$file->getClientOriginalName();
+    $file-> move(public_path('img'), $filename);
+    $file_store= $filename;
+    $data-> img =$file_store; /// cloum name
+    $data->update();
+    return redirect('home');
+
+
+  }
+
 
   public function insert_request(Request $request){
     $create=new elders();
@@ -94,36 +141,10 @@ public function delete_job($user_id)
 
 }
 
-public function updateuser(Request $request)
-{
-  $id = Auth::user()->id;
-
-  $name=$request->input('name');
-  $lname=$request->input('lname');
-  $phone=$request->input('phone');
-  $email=$request->input('email');
-  $age=$request->input('age');
-  $gender=$request->input('gender');
-  DB::update('update users set name = ? ,lname = ? , phone=?, email=?, age=?, gender=? where id = ?', [$name,$lname,$phone,$email,$age,$gender,$id]);
-  return redirect('/home')->with('message','The data has been updated successfully');
-
-}
 
 
-  public function editPic(Request $request)
-  {
-   $id = Auth::user()->id;
-    $data = User::find($id);
-    $file= $request->file('img');
-    $filename=$file->getClientOriginalName();
-    $file-> move(public_path('img'), $filename);
-    $file_store= $filename;
-    $data-> img =$file_store; /// cloum name
-    $data->update();
-    return redirect('home');
 
 
-  }
 
 }
 

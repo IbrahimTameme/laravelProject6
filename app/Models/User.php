@@ -37,6 +37,9 @@ class User extends Authenticatable
         'car',
         'is_accepted',
         'is_deleted',
+        'volunteer_id',
+        'job_taken'
+
 
     ];
 
