@@ -28,6 +28,9 @@ class CreateEldersTable extends Migration
             $table->string('guardian_id_pic');
             $table->boolean('is_accepted')->default('0');
             $table->boolean('is_deleted')->default('0');
+            $table->boolean('job_taken')->default('0');
+            $table->integer('volunteer_id');
+
 
 
 

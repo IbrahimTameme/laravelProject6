@@ -27,7 +27,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #008E89
+    color: #000
 ;
     outline: none;
     text-decoration: none;
@@ -286,7 +286,7 @@ a:focus {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #8adfdc
+    color: #000;
 ;
     transition: none;
 }
@@ -1996,7 +1996,7 @@ a:focus {
 
 .sidebar .tab-post .nav.nav-pills .nav-link:hover,
 .sidebar .tab-post .nav.nav-pills .nav-link.active {
-    color: #008E89
+    color: #000
 ;
     background: #4a4c70;
 }

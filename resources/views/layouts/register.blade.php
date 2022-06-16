@@ -27,6 +27,8 @@ div.card{
 
 
 @extends('layouts.app')
+@section('title, register')
+
 
 @section('content')
 <div class="container">
@@ -37,7 +39,11 @@ div.card{
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
+                        
                         @csrf
+
+                       
+
 
                         <div class="row mb-3">
                             <label for="first name" class="col-md-4 col-form-label text-md-end">{{ __('First Name') }}</label>

@@ -89,7 +89,7 @@
                                         {{ __('Logout') }}
                                     </a>
                                     <a href="/home" class="nav-item nav-link" style="color:black">Account</a>
-                                    <a href="//show_request" class="nav-item nav-link" style="color:black">Start</a>
+                                    <a href="/show_request" class="nav-item nav-link" style="color:black">Start</a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
