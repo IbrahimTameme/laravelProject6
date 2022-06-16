@@ -7,8 +7,11 @@ use App\Models\User;
 use App\Models\requests;
 use App\Models\elders;
 
+use Illuminate\Support\Facades\Auth;
+
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+
 
 
 
@@ -98,9 +101,13 @@ public function updateuser(Request $request)
   public function show_request()
 {
 
+
+$view2 = elders::all();
+
 $view2 = DB::table('elders')
 ->where('job_taken',0)->where('is_accepted',1)
 ->get();
+
 return view('show_request',compact('view2'));
 
 }

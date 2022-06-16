@@ -1,0 +1,22 @@
+ @foreach($view2 as $data) 
+       <div class="col-md-6">
+    <div class="card " style="width: 25rem;">
+        
+        <img src="https://media.istockphoto.com/photos/she-knows-just-how-to-make-each-patient-feel-special-picture-id1134451603?k=20&m=1134451603&s=612x612&w=0&h=wj0l3mDw95G8fZmZgRWmjQhF53NLgRNMQSMgLeCD-tg=" >
+        <div class="container">  
+        <div class="card-body">
+          <h5 class="card-title"style="text-align:center"> Name :{{$data->name}}</h5>
+          <p class="card-text"style="text-align:center">Age :{{$data->age}}</p>
+          <p class="card-text"style="text-align:center">Gender :{{$data->gender}}</p>
+          <p class="card-text"style="text-align:center">location :{{$data->location}}</p>
+          <p class="card-text"style="text-align:center">Phone :{{$data->phone_num}}</p>
+          <p class="card-text"style="text-align:center">needed_services :{{$data->needed_services}}</p>
+          <p class="card-text"style="text-align:center">Date :{{$data->date}}</p>
+        </div> 
+        <p><button>Contact</button></p>
+    
+      </div> 
+    </div>
+        </div>
+
+@endforeach
