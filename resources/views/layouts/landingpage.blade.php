@@ -44,6 +44,7 @@
                             <div class="carousel-btn">
                                 <a class="btn btn-custom" href="">Volunteer  Now</a>
                                 <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/HLGzMgQrlWs" data-target="#videoModal">Watch Video</a>
+                                <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/HLGzMgQrlWs" data-target="#videoModal">Apply For our Serves</a>
                             </div>
                         </div>
                     </div>

@@ -34,6 +34,7 @@
         
         <div class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
+<<<<<<< HEAD
                 <img src="{{asset('img/logo2.png')}}" height="70px" width="60px" alt="logo" style="margin:10px">
                 <a href="/ho" class="navbar-brand">AUNS</a>
                 <a href="event.html" class="nav-item nav-link">Home</a>
@@ -41,6 +42,17 @@
                 <a href="event.html" class="nav-item nav-link">About</a>
                 <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
+=======
+                <img src="{{asset('img/logo2.png')}}" height="90px" width="70px" alt="logo" style="margin:10px">
+              
+                <a class="nav-item nav-link" href="/">Home</a>
+                
+                        <a href="/About" class="nav-item nav-link">About</a>
+                        <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
+                        <a href="/Contactus" class="nav-item nav-link">Contact</a>
+                        <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
+                        <a href="request" class="nav-item nav-link">Apply</a>
+>>>>>>> 944c58e5850be68b0ac26cdc8423860089e654a8
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                   
@@ -50,6 +62,8 @@
                     <div class="navbar-nav ml-auto">
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
+
+                        
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
@@ -74,7 +88,8 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-                                    <a href="" class="nav-item nav-link" style="color:black">Account</a>
+                                    <a href="/home" class="nav-item nav-link" style="color:black">Account</a>
+                                    <a href="//show_request" class="nav-item nav-link" style="color:black">Start</a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf

@@ -7,6 +7,10 @@ use App\Http\Controllers\contact;
 
 use App\Http\Controllers\TestController;
 
+
+
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -61,7 +65,9 @@ Route::post('contacts', [contact::class, 'contacts']);
 
 
 
-Route::post('/added',  [EldersController::class, 'insert']);
+Route::post('/added',  [TestController::class, 'editPic']);
+Route::post('/updateuser',  [TestController::class, 'updateuser']);
+
 
 
 Route::post('/request',[TestController::class, 'insert_request']);
